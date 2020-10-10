@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>short exercises</title>
+</head>
+
+<body>
+    <button>click me</button>
+    <script>
+        //1. Write function that returns values of array and not odd
+        function noOdds(values) {
+            var newArr = [];
+            for (var i = 0; i < values.length; i++) {
+                if (values[i] % 2 === 0) {
+                    newArr.push(values[i]);
+                    console.log(newArr);
+                }
+            }
+            alert("Not odd values in given array are: " + newArr);
+        }
+        noOdds([0, 1, 2, 3], [0]);
+
+        //2.
+        function myLocalScope() {
+            var myVar = "foo";
+            console.log(myVar);
+        }
+        myLocalScope();
+
+        //3.
+        function timeFive(num) {
+            return num * 5;
+        }
+        console.log(timeFive(17));
+
+        //4.
+        var sum = 0;
+
+        function addFive() {
+            sum = sum + 5;
+        }
+        addFive();
+        console.log(addFive());
+        console.log(sum);
+
+        //5.
+        var processed = 0;
+
+        function processArg(num) {
+            return (num + 3) / 5;
+        }
+        processed = processArg(20);
+
+        //6.
+        let button = document.querySelector('button');
+
+        button.addEventListener('click', function() {
+            console.log('test');
+        });
+    </script>
+</body>
+
+</html>
