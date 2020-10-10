@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Write function that returns values of array and not odd-->
+    <!--All values in array will be integers-->
+    <script>
+        function noOdds(values) {
+            var newArr = [];
+            for (var i = 0; i < values.length; i++) {
+                if (values[i] % 2 === 0) {
+                    newArr.push(values[i]);
+                    console.log(newArr);
+                }
+            }
+            alert("Not odd values in given array are: " + newArr);
+        }
+        noOdds([0, 1, 2, 3], [0]);
+    </script>
+</body>
+
+</html>
