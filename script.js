@@ -76,3 +76,24 @@ let printValuess = (array) => {
     });
 }
 printValuess([0, 3, 6, 7, 9])
+
+
+//search word "man" in string str
+var str = "A good man will want you to shine. He wants you to be yourself." +
+    "A good man loves to show off his happy,intelligent, powerful woman";
+var patt = /man/g;
+var result = str.replace(patt, "person");
+console.log(result);
+
+//seach character "e"
+var str1 = "work hard in silence. let success be your noise";
+var patt1 = /e/g;
+var res1 = str1.replace(patt1, "");
+console.log(res1);
+
+//do global search for "all":
+var str2 = "What is the definition of all? What is the meaning of all? " +
+    "How do you use all in a sentence? What are synonyms for all?";
+var patt2 = /all/g;
+var res2 = str2.match(patt2);
+console.log(res2);
