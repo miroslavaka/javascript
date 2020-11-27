@@ -97,3 +97,32 @@ var str2 = "What is the definition of all? What is the meaning of all? " +
 var patt2 = /all/g;
 var res2 = str2.match(patt2);
 console.log(res2);
+
+//while loop
+var i = 1;
+var answer = 0;
+
+while (i < 21) {
+    answer = i
+    i++;
+    document.write("answer = " + answer + "<BR>");
+}
+
+//substring
+function myFunction() {
+    var str = "Mozilla/5.0(iPad; CPU OS 5_0_1 like Mac OS X)";
+    var str1 = str.indexOf("iPad");
+    var str2 = str.indexOf("Mac OS");
+    document.write(str2);
+    if (str1 == -1) {
+        document.write("does not contain iPad");
+    } else {
+        var str1 = str.substr(str1, 4);
+    }
+    if (str2 == -1) {
+        document.write("does not contain Mac OS");
+    } else {
+        var str2 = str.substr(str2, 6);
+    }
+    document.write(str1 + "<BR>" + str2);
+}
