@@ -126,3 +126,10 @@ function myFunction() {
     }
     document.write(str1 + "<BR>" + str2);
 }
+
+//Date
+var date = new Date();
+alert(date);
+console.log("Today is " + date);
+document.body.innerHTML = "<h1> Today is " + date + "</h1>";
+document.body.innerHTML = "<h1> Today is " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getYearYear() + "</h1>";
