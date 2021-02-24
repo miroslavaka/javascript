@@ -59,9 +59,23 @@
             console.log('test');
         });
 
-        //7.
+        //7.qureySelector, forEach
         document.querySelectorAll("#contact1 li span").forEach(item => item.style.color = "#3cb371");
         document.querySelectorAll("#contact2 li span").forEach(item => item.style.color = "#ace1af");
+
+        //8.querySelector, add, remove
+        document.querySelector("ul").classList.add("backpack_feat", "links");
+        document.querySelector("ul").classList.remove("backpack_feat");
+
+        //9.attributes
+        document.querySelector("img").attributes;
+        document.querySelector("ul").setAttribute("type", "circle");
+        document.querySelector("ul").hasAttribute("type");
+        document.querySelector("ul").attributes;
+        document.querySelector("ul").setAttribute("type", "square");
+
+        //10.inline style
+        document.querySelectorAll("li").forEach(item => item.style.color = "orange");
     </script>
 </body>
 
